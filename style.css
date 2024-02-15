@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #CA7C31;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9FCEC5;
+    width: 100vw;
+    padding-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2.0rem;
+    justify-content: center;
+}
+button {
+    border: none;
+    font-size: 2.0rem;
+    background-color: #E9CB6A;
+    padding: 1.0rem;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #BC5332;
+}
+button:hover {
+    cursor: pointer;
+}
+/* Main Content styles */
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: min(130ch, 50vw);
+    margin-top: 3rem;
+}
+/* Home */
+#welcome-message {
+    background-color: #BC5332;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+#introduction {
+    margin-top: 1.0rem;
+    font-size: 1.5rem;
+    padding: 1.0rem;
+    border: 15px dashed #C3C9AC;
+    color: white;
+}
+#information {
+    margin-top: 1.0rem;
+    font-size: 1.5rem;
+    padding: 1.0rem;
+    border: 15px dashed #C3C9AC;
+    color: white;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+#lasagna, #pizza, #spaghetti, #dumplings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    border: 10px dashed #BC5332;
+    font-size: 1.3rem;
+    position: relative;
+    width: 50%;
+    padding: 2rem;
+}
+#lasagna img, #pizza img, #spaghetti img, #dumplings img {
+    width: 100px;
+}
+#price {
+    font-size: 2rem;
+}
+#left {
+    position: absolute;
+    left: -30%;
+    bottom: 10%;
+}
+#right {
+    position: absolute;
+    right: -30%;
+    bottom: 10%;
+}
+#bottom {
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+}
+#top {
+    position: absolute;
+    top: -10%;
+    right: -30%;
+}
+
+@media (max-width: 700px) {
+    #content {
+        width: 90vw;   
+    }
+}
